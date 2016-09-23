@@ -95,8 +95,8 @@
     <string name="favorite_total">當前生字本中共有 %d 個生字</string>
     <string name="favorite_empty">當前生字本中沒有生字。\n\n在“字典”頁面，點擊查詢結果右上角的五角星，可以把相應的漢字加入生字本中。</string>
 
-    <string name="pref_title_mandarin_display">國語顯示方式</string>
-    <string name="pref_summary_mandarin_display">國語顯示方式</string>
+    <string name="pref_title_mandarin_display">國語/普通話顯示方式</string>
+    <string name="pref_summary_mandarin_display">國語/普通話顯示方式</string>
     <string-array name="pref_entries_mandarin_display">
         <item>漢語拼音</item>
         <item>注音符號</item>
@@ -133,6 +133,7 @@
         <item>日本式羅馬字</item>
         <item>黑本式羅馬字</item>
     </string-array>
+
     <string name="search_mode">查詢模式</string>
     <string name="toggle_options">查詢模式</string>
 

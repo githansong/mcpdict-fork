@@ -46,9 +46,6 @@
     </string-array>
 
     <string name="pref_title_general">General Settings</string>
-    <string name="pref_key_kuangx_yonh_only">KUANGX_YONH_ONLY</string>
-    <string name="pref_key_allow_variants">ALLOW_VARIANTS</string>
-    <string name="pref_key_tone_insensitive">TONE_INSENSITIVE</string>
 
     <string name="copy_readings">複製“%c”字或其讀音</string>
     <string name="dict_links">去在線詞典查詢“%c”字</string>
@@ -98,21 +95,13 @@
     <string name="favorite_total">當前生字本中共有 %d 個生字</string>
     <string name="favorite_empty">當前生字本中沒有生字。\n\n在“字典”頁面，點擊查詢結果右上角的五角星，可以把相應的漢字加入生字本中。</string>
 
-    <string name="pref_key_favorite_delete_no_confirm_expiry">FAVORITE_DELETE_NO_CONFIRM_EXPIRY</string>
-
-    <string name="pref_key_mandarin_display">MANDARIN_DISPLAY</string>
     <string name="pref_title_mandarin_display">Standard Chinese</string>
     <string name="pref_summary_mandarin_display">Phonetic notation system for Standard Chinese</string>
     <string-array name="pref_entries_mandarin_display">
         <item>Pinyin</item>
         <item>Bopomofo</item>
     </string-array>
-    <string-array name="pref_values_mandarin_display">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_cantonese_romanization">CANTONESE_ROMANIZATION</string>
     <string name="pref_title_cantonese_romanization">Cantonese</string>
     <string name="pref_summary_cantonese_romanization">Romanisation scheme for Cantonese(used for input and display)</string>
     <string-array name="pref_entries_cantonese_romanization">
@@ -121,38 +110,21 @@
         <item>Yale\'s</item>
         <item>Sidney Lau romanisation</item>
     </string-array>
-    <string-array name="pref_values_cantonese_romanization">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
 
-    <string name="pref_key_korean_display">KOREAN_DISPLAY</string>
     <string name="pref_title_korean_display">Korean display mode</string>
     <string name="pref_summary_korean_display">How to display Korean pronunciation.</string>
     <string-array name="pref_entries_korean_display">
         <item>Hangul</item>
         <item>Revised romanization of Korean</item>
     </string-array>
-    <string-array name="pref_values_korean_display">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_vietnamese_tone_position">VIETNAMESE_TONE_POSITION</string>
     <string name="pref_title_vietnamese_tone_position">Vietnamese tonal notation style</string>
     <string name="pref_summary_vietnamese_tone_position">Tonal notations of different Vietnamese orthography system.</string>
     <string-array name="pref_entries_vietnamese_tone_position">
         <item>Old style (hòa, thủy)</item>
         <item>New style (hoà, thuỷ)</item>
     </string-array>
-    <string-array name="pref_values_vietnamese_tone_position">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_japanese_display">JAPANESE_DISPLAY</string>
     <string name="pref_title_japanese_display">Japanese display mode</string>
     <string name="pref_summary_japanese_display">How to display Japanese pronunciation.</string>
     <string-array name="pref_entries_japanese_display">
@@ -160,12 +132,6 @@
         <item>Katagana</item>
         <item>Nihon-shiki</item>
         <item>Hepburn</item>
-    </string-array>
-    <string-array name="pref_values_japanese_display">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
     </string-array>
     <string name="search_mode">Search Mode</string>
     <string name="toggle_options">Options</string>

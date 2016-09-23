@@ -46,9 +46,6 @@
     </string-array>
 
     <string name="pref_title_general">通用设置</string>
-    <string name="pref_key_kuangx_yonh_only">KUANGX_YONH_ONLY</string>
-    <string name="pref_key_allow_variants">ALLOW_VARIANTS</string>
-    <string name="pref_key_tone_insensitive">TONE_INSENSITIVE</string>
 
     <string name="copy_readings">复制“%c”字或其读音</string>
     <string name="dict_links">去在线词典查询“%c”字</string>
@@ -98,21 +95,13 @@
     <string name="favorite_total">当前生字本中共有 %d 個生字</string>
     <string name="favorite_empty">当前生字本中沒有生字。\n\n在“字典”页面，点击查询結果右上角的五角星，可以把相应的汉字加入生字本中。</string>
 
-    <string name="pref_key_favorite_delete_no_confirm_expiry">FAVORITE_DELETE_NO_CONFIRM_EXPIRY</string>
-
-    <string name="pref_key_mandarin_display">MANDARIN_DISPLAY</string>
     <string name="pref_title_mandarin_display">普通话显示方式</string>
     <string name="pref_summary_mandarin_display">普通话显示方式</string>
     <string-array name="pref_entries_mandarin_display">
         <item>汉语拼音</item>
         <item>注音符号</item>
     </string-array>
-    <string-array name="pref_values_mandarin_display">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_cantonese_romanization">CANTONESE_ROMANIZATION</string>
     <string name="pref_title_cantonese_romanization">粵语拼音系统（用于输入和显示）</string>
     <string name="pref_summary_cantonese_romanization">粵语拼音系统（用于输入和显示）</string>
     <string-array name="pref_entries_cantonese_romanization">
@@ -121,38 +110,21 @@
         <item>耶鲁式</item>
         <item>刘锡祥式</item>
     </string-array>
-    <string-array name="pref_values_cantonese_romanization">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
 
-    <string name="pref_key_korean_display">KOREAN_DISPLAY</string>
     <string name="pref_title_korean_display">朝鲜语显示方式</string>
     <string name="pref_summary_korean_display">朝鲜语显示方式</string>
     <string-array name="pref_entries_korean_display">
         <item>谚文</item>
         <item>文观部2000年式罗马字</item>
     </string-array>
-    <string-array name="pref_values_korean_display">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_vietnamese_tone_position">VIETNAMESE_TONE_POSITION</string>
     <string name="pref_title_vietnamese_tone_position">越南语声调标记方式</string>
     <string name="pref_summary_vietnamese_tone_position">越南语声调标记方式</string>
     <string-array name="pref_entries_vietnamese_tone_position">
         <item>旧式（hòa, thủy）</item>
         <item>新式（hoà, thuỷ）</item>
     </string-array>
-    <string-array name="pref_values_vietnamese_tone_position">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
 
-    <string name="pref_key_japanese_display">JAPANESE_DISPLAY</string>
     <string name="pref_title_japanese_display">日语显示方式</string>
     <string name="pref_summary_japanese_display">日语显示方式</string>
     <string-array name="pref_entries_japanese_display">
@@ -161,12 +133,7 @@
         <item>日本式罗马字</item>
         <item>黑本式罗马字</item>
     </string-array>
-    <string-array name="pref_values_japanese_display">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
+
     <string name="search_mode">查询模式</string>
     <string name="toggle_options">查询模式</string>
 

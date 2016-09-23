@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.hanqim.mcpdict.MainActivity">
+
+    <RelativeLayout
+        android:padding="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground">
+        <org.hanqim.mcpdict.views.SearchEditView
+            android:id="@+id/search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/white">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_search_as" />
+        <CheckBox
+            style="@style/CheckBoxOption"
+            android:id="@+id/check_box_kuangx_yonh_only"
+            android:text="@string/option_kuangx_yonh_only" />
+        <CheckBox
+            style="@style/CheckBoxOption"
+            android:id="@+id/check_box_allow_variants"
+            android:text="@string/option_allow_variants" />
+        <CheckBox
+            style="@style/CheckBoxOption"
+            android:id="@+id/check_box_tone_insensitive"
+            android:text="@string/option_tone_insensitive" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/search_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

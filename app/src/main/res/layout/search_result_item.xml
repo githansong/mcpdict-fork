@@ -1,0 +1,233 @@
+<!--
+    android:descendantFocusability="blocksDescendants" is necessary to make
+    a search result item clickable with the presence of the "favorite" button inside it.
+    Reference: http://stackoverflow.com/a/12528960
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="2dp"
+            android:paddingRight="6dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="6dp">
+
+            <TextView
+                android:id="@+id/text_hz"
+                style="@style/FontSearchResultEntry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_unicode"
+                style="@style/FontDim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_variants"
+                style="@style/FontDim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:shrinkColumns="1,3"
+            android:stretchColumns="1,3">
+
+            <TableRow android:gravity="top">
+
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_mc" />
+
+                <LinearLayout
+                    android:layout_span="3"
+                    android:baselineAligned="false"
+                    android:gravity="top"
+                    android:orientation="horizontal">
+                    <!--
+                        android:baselineAligned="false" is necessary to ensure correct vertical
+                        alignment of text in the TextViews.
+                        Reference: http://stackoverflow.com/a/13366950
+                    -->
+                    <TextView
+                        android:id="@+id/text_mc"
+                        style="@style/FontDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/text_mc_detail"
+                        style="@style/FontDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button_favorite"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <!--标准汉语-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_pu" />
+
+                <TextView
+                    android:id="@+id/text_pu"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+
+                <!--广州话-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_ct" />
+
+                <TextView
+                    android:id="@+id/text_ct"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <!--上海话-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_sh" />
+
+                <TextView
+                    android:id="@+id/text_sh"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+
+                <!--闽南语-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_mn" />
+
+                <TextView
+                    android:id="@+id/text_mn"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <!--韩国语-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_kr" />
+
+                <TextView
+                    android:id="@+id/text_kr"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+
+                <!--越南语-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_vn" />
+
+                <TextView
+                    android:id="@+id/text_vn"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <!--日本语-->
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_jp_go" />
+
+                <TextView
+                    android:id="@+id/text_jp_go"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+
+                <ImageView
+                    style="@style/ImageDetail"
+                    android:src="@drawable/lang_jp_kan" />
+
+                <TextView
+                    android:id="@+id/text_jp_kan"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <ImageView
+                    android:id="@+id/image_jp_extra_1"
+                    style="@style/ImageDetail" />
+
+                <TextView
+                    android:id="@+id/text_jp_extra_1"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+
+                <ImageView
+                    android:id="@+id/image_jp_extra_2"
+                    style="@style/ImageDetail" />
+
+                <TextView
+                    android:id="@+id/text_jp_extra_2"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+            <TableRow android:gravity="top">
+
+                <ImageView
+                    android:id="@+id/image_jp_extra_3"
+                    style="@style/ImageDetail" />
+
+                <TextView
+                    android:id="@+id/text_jp_extra_3"
+                    style="@style/FontDetail"
+                    android:layout_width="0dp" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/text_comment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

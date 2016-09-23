@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">漢字古今中外讀音查詢</string>
+    <string name="settings">設置</string>
+    <string name="help">幫助</string>
+    <string name="about">關於</string>
+    <string name="about_message">
+        <![CDATA[
+         漢字古今中外讀音查詢 V2.1
+         2015.03.24
+
+         作者：Maigo
+         maigoakisame@gmail.com
+        ]]>
+    </string>
+
+    <string name="ok">確定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="save">保存</string>
+    <string name="delete">刪除</string>
+    <string name="clear">清空</string>
+
+    <string name="tab_dictionary">字典</string>
+    <string name="tab_favorite">生字本</string>
+
+    <string name="search_hint">輸入漢字或讀音</string>
+    <string name="search_for">查詢內容：</string>
+    <string name="search_as">查詢模式：</string>
+    <string name="search_options">查詢選項：</string>
+    <string name="option_kuangx_yonh_only">僅在《廣韻》內查找</string>
+    <string name="option_allow_variants">簡繁、異體轉換</string>
+    <string name="option_tone_insensitive">聲調不敏感</string>
+    <string name="no_matches">未找到符合條件的漢字。</string>
+
+    <string-array name="search_as">
+        <item>漢字</item>
+        <item>中古拼音</item>
+        <item>普通話</item>
+        <item>粵語</item>
+        <item>朝鮮語</item>
+        <item>越南語</item>
+        <item>日語吳音</item>
+        <item>日語漢音</item>
+        <item>日語（任意讀音）</item>
+    </string-array>
+
+    <string name="pref_title_general">通用设置</string>
+    <string name="pref_key_kuangx_yonh_only">KUANGX_YONH_ONLY</string>
+    <string name="pref_key_allow_variants">ALLOW_VARIANTS</string>
+    <string name="pref_key_tone_insensitive">TONE_INSENSITIVE</string>
+
+    <string name="copy_readings">複製“%c”字或其讀音</string>
+    <string name="dict_links">去在線詞典查詢“%c”字</string>
+
+    <string name="copy_hz">複製“%c”字</string>
+    <string name="copy_unicode">複製“%c”字的Unicode編碼</string>
+    <string name="copy_all">複製“%c”字及其所有讀音</string>
+    <string name="copy_mc">複製“%c”字的中古漢語讀音</string>
+    <string name="copy_pu">複製“%c”字的普通話讀音</string>
+    <string name="copy_ct">複製“%c”字的粵語讀音</string>
+    <string name="copy_kr">複製“%c”字的朝鮮語讀音</string>
+    <string name="copy_vn">複製“%c”字的越南語讀音</string>
+    <string name="copy_jp_all">複製“%c”字的所有日語讀音</string>
+    <string name="copy_jp_go">複製“%c”字的日語吳音</string>
+    <string name="copy_jp_kan">複製“%c”字的日語漢音</string>
+    <string name="copy_jp_tou">複製“%c”字的日語唐音</string>
+    <string name="copy_jp_kwan">複製“%c”字的日語慣用音</string>
+    <string name="copy_jp_other">複製“%c”字的日語其他讀音</string>
+
+    <string name="copy_done">已將 %s 複製到剪貼板</string>
+
+    <string name="dict_link_mc">去 韻典網 查詢“%c”字</string>
+    <string name="dict_link_pu">去 漢典網 查詢“%c”字</string>
+    <string name="dict_link_ct">去 粵語審音配詞字庫 查詢“%c”字</string>
+    <string name="dict_link_kr">去 Naver漢字辭典 查詢“%c”字</string>
+    <string name="dict_link_vn">去 漢越辭典摘引 查詢“%c”字</string>
+
+    <string name="favorite_add">把“%c”字加入生字本</string>
+    <string name="favorite_view">查看“%c”字的筆記</string>
+    <string name="favorite_edit">編輯“%c”字的筆記</string>
+    <string name="favorite_edit_2lines">編輯“%c”字\n的筆記</string>
+    <string name="favorite_view_or_edit">查看或編輯“%c”字的筆記</string>
+    <string name="favorite_delete">把“%c”字從生字本中刪除</string>
+    <string name="favorite_delete_2lines">從生字本中\n刪除“%c”字</string>
+    <string name="favorite_clear">清空生字本</string>
+
+    <string name="favorite_add_hint">寫點筆記吧…</string>
+    <string name="favorite_delete_confirm">確定把“%c”字從生字本中刪除嗎？刪除後無法恢復！</string>
+    <string name="favorite_delete_no_confirm">1小時內不再提示</string>
+    <string name="favorite_clear_confirm">確定清空生字本嗎？清空後無法恢復！</string>
+
+    <string name="favorite_add_done">已將“%c”字加入生字本</string>
+    <string name="favorite_edit_done">已保存“%c”字的筆記</string>
+    <string name="favorite_delete_done">已將“%c”字從生字本中刪除</string>
+    <string name="favorite_clear_done">已清空生字本</string>
+
+    <string name="favorite_total">當前生字本中共有 %d 個生字</string>
+    <string name="favorite_empty">當前生字本中沒有生字。\n\n在“字典”頁面，點擊查詢結果右上角的五角星，可以把相應的漢字加入生字本中。</string>
+
+    <string name="pref_key_favorite_delete_no_confirm_expiry">FAVORITE_DELETE_NO_CONFIRM_EXPIRY</string>
+
+    <string name="pref_key_mandarin_display">MANDARIN_DISPLAY</string>
+    <string name="pref_title_mandarin_display">國語/普通話顯示方式</string>
+    <string name="pref_summary_mandarin_display">國語/普通話顯示方式</string>
+    <string-array name="pref_entries_mandarin_display">
+        <item>漢語拼音</item>
+        <item>注音符號</item>
+    </string-array>
+    <string-array name="pref_values_mandarin_display">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="pref_key_cantonese_romanization">CANTONESE_ROMANIZATION</string>
+    <string name="pref_title_cantonese_romanization">粵語拼音系統（用於輸入和顯示）</string>
+    <string name="pref_summary_cantonese_romanization">粵語拼音系統（用於輸入和顯示）</string>
+    <string-array name="pref_entries_cantonese_romanization">
+        <item>香港語言學學會式（粵拼）</item>
+        <item>教院式</item>
+        <item>耶魯式</item>
+        <item>劉錫祥式</item>
+    </string-array>
+    <string-array name="pref_values_cantonese_romanization">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="pref_key_korean_display">KOREAN_DISPLAY</string>
+    <string name="pref_title_korean_display">朝鮮語顯示方式</string>
+    <string name="pref_summary_korean_display">朝鮮語顯示方式</string>
+    <string-array name="pref_entries_korean_display">
+        <item>諺文</item>
+        <item>文觀部2000年式羅馬字</item>
+    </string-array>
+    <string-array name="pref_values_korean_display">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="pref_key_vietnamese_tone_position">VIETNAMESE_TONE_POSITION</string>
+    <string name="pref_title_vietnamese_tone_position">越南語聲調標記方式</string>
+    <string name="pref_summary_vietnamese_tone_position">越南語聲調標記方式</string>
+    <string-array name="pref_entries_vietnamese_tone_position">
+        <item>舊式（hòa, thủy）</item>
+        <item>新式（hoà, thuỷ）</item>
+    </string-array>
+    <string-array name="pref_values_vietnamese_tone_position">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string name="pref_key_japanese_display">JAPANESE_DISPLAY</string>
+    <string name="pref_title_japanese_display">日語顯示方式</string>
+    <string name="pref_summary_japanese_display">日語顯示方式</string>
+    <string-array name="pref_entries_japanese_display">
+        <item>平假名</item>
+        <item>片假名</item>
+        <item>日本式羅馬字</item>
+        <item>黑本式羅馬字</item>
+    </string-array>
+    <string-array name="pref_values_japanese_display">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="search_mode">查詢模式</string>
+    <string name="toggle_options">查詢模式</string>
+
+</resources>

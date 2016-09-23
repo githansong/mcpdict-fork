@@ -1,0 +1,63 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_title_general">
+        <ListPreference
+            android:defaultValue="0"
+            android:title="@string/pref_title_mandarin_display"
+            android:dialogTitle="@string/pref_title_mandarin_display"
+            android:entries="@array/pref_entries_mandarin_display"
+            android:entryValues="@array/pref_values_mandarin_display"
+            android:summary="@string/pref_summary_mandarin_display"
+            android:key="@string/pref_key_mandarin_display"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <ListPreference
+            android:key="@string/pref_key_cantonese_romanization"
+            android:title="@string/pref_title_cantonese_romanization"
+            android:dialogTitle="@string/pref_title_cantonese_romanization"
+            android:summary="@string/pref_title_cantonese_romanization"
+            android:entries="@array/pref_entries_cantonese_romanization"
+            android:entryValues="@array/pref_values_cantonese_romanization"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="@string/pref_key_korean_display"
+            android:title="@string/pref_title_korean_display"
+            android:dialogTitle="@string/pref_title_korean_display"
+            android:summary="@string/pref_summary_korean_display"
+            android:entries="@array/pref_entries_korean_display"
+            android:entryValues="@array/pref_values_korean_display"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="@string/pref_key_vietnamese_tone_position"
+            android:title="@string/pref_title_vietnamese_tone_position"
+            android:dialogTitle="@string/pref_title_vietnamese_tone_position"
+            android:summary="@string/pref_summary_vietnamese_tone_position"
+            android:entries="@array/pref_entries_vietnamese_tone_position"
+            android:entryValues="@array/pref_values_vietnamese_tone_position"
+            android:defaultValue="0" />
+
+        <ListPreference
+            android:key="@string/pref_key_japanese_display"
+            android:title="@string/pref_title_japanese_display"
+            android:dialogTitle="@string/pref_title_japanese_display"
+            android:summary="@string/pref_summary_japanese_display"
+            android:entries="@array/pref_entries_japanese_display"
+            android:entryValues="@array/pref_values_japanese_display"
+            android:defaultValue="0" />
+
+        <!--<ListPreference-->
+            <!--android:key="MIDDLE_CHINESE_DISPLAY"-->
+            <!--android:title=""-->
+            <!--android:dialogTitle=""-->
+            <!--android:summary=""-->
+            <!--android:entries=""-->
+            <!--android:entryValues=""-->
+            <!--/>-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

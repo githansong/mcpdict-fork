@@ -1,4 +1,4 @@
-# MCPDict - the new version
+# MCPDict - 64Bits
 
 本项目的目的是对 [mcpdict-fork](https://github.com/thenlai/mcpdict-fork) 进行改进。
 

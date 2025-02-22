@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.preference.PreferenceManager;
-import android.support.v4.widget.CursorAdapter;
+import androidx.cursoradapter.widget.CursorAdapter;
 import android.text.Spannable;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import org.hanqim.mcpdict.Configuration;
 import org.hanqim.mcpdict.R;
+import org.hanqim.mcpdict.R2;
 import org.hanqim.mcpdict.editor.Orthography;
 import org.w3c.dom.Text;
 
@@ -27,6 +28,8 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
+
+import androidx.cursoradapter.widget.CursorAdapter;
 
 public class SearchResultCursorAdapter extends CursorAdapter implements Masks {
 
@@ -362,38 +365,38 @@ public class SearchResultCursorAdapter extends CursorAdapter implements Masks {
     }
 
     static final class ViewHolder {
-        @BindView(R.id.text_unicode)
+        @BindView(R2.id.text_unicode)
         TextView unicodePoint;
-        @BindView(R.id.text_hz)
+        @BindView(R2.id.text_hz)
         TextView hanzi;
-        @BindView(R.id.text_variants)
+        @BindView(R2.id.text_variants)
         TextView variants;
-        @BindView(R.id.text_comment)
+        @BindView(R2.id.text_comment)
         TextView comment;
-        @BindView(R.id.text_mc)
+        @BindView(R2.id.text_mc)
         TextView middleChinese;
-        @BindView(R.id.text_mc_detail)
+        @BindView(R2.id.text_mc_detail)
         TextView middleChineseDetail;
-        @BindView(R.id.text_pu)
+        @BindView(R2.id.text_pu)
         TextView mandarin;
-        @BindView(R.id.text_ct)
+        @BindView(R2.id.text_ct)
         TextView cantonese;
-        @BindView(R.id.text_sh)
+        @BindView(R2.id.text_sh)
         TextView shanghai;
-        @BindView(R.id.text_mn)
+        @BindView(R2.id.text_mn)
         TextView minnan;
-        @BindView(R.id.text_kr)
+        @BindView(R2.id.text_kr)
         TextView korean;
-        @BindView(R.id.text_vn)
+        @BindView(R2.id.text_vn)
         TextView vietnamese;
-        @BindView(R.id.text_jp_go)
+        @BindView(R2.id.text_jp_go)
         TextView japaneseGo;
-        @BindView(R.id.text_jp_kan)
+        @BindView(R2.id.text_jp_kan)
         TextView japaneseKan;
         // Japanese extras
-        @BindViews({R.id.image_jp_extra_1, R.id.image_jp_extra_2, R.id.image_jp_extra_3})
+        @BindViews({R2.id.image_jp_extra_1, R2.id.image_jp_extra_2, R2.id.image_jp_extra_3})
         ImageView[] imageViewJPExtras;
-        @BindViews({R.id.text_jp_extra_1, R.id.text_jp_extra_2, R.id.text_jp_extra_3})
+        @BindViews({R2.id.text_jp_extra_1, R2.id.text_jp_extra_2, R2.id.text_jp_extra_3})
         TextView[] japaneseExtras;
 
         ViewHolder(View view) {

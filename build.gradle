@@ -2,11 +2,13 @@
 
 buildscript {
     repositories {
-        jcenter()
+        google()  // 确保添加了这个仓库
+        mavenCentral()  // 确保添加了这个仓库
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.2.0'
+        classpath 'com.android.tools.build:gradle:8.8.1'
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.3'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -14,10 +16,11 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+        google()  // 确保添加了这个仓库
+        mavenCentral()  // 确保添加了这个仓库
     }
 }
 
-task clean(type: Delete) {
+tasks.register('clean', Delete) {
     delete rootProject.buildDir
 }

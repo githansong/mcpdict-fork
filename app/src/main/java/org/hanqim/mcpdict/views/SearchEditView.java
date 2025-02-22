@@ -10,6 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import org.hanqim.mcpdict.R;
+import org.hanqim.mcpdict.R2;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -20,9 +21,9 @@ import butterknife.OnTextChanged;
 public class SearchEditView extends RelativeLayout {
     private Context mContext;
 
-    @BindView(R.id.sev__input) EditText input;
+    @BindView(R2.id.sev__input) EditText input;
     //@BindView(R.id.sev__hisotry) ImageButton history;
-    @BindView(R.id.sev__clear) ImageButton clear;
+    @BindView(R2.id.sev__clear) ImageButton clear;
 
     public SearchEditView(Context context) {
         super(context);
@@ -46,12 +47,12 @@ public class SearchEditView extends RelativeLayout {
         ButterKnife.bind(selfView);
     }
 
-    @OnClick(R.id.sev__clear)
+    @OnClick(R2.id.sev__clear)
     void onClearClick(View view) {
         input.setText("");
     }
 
-    @OnTextChanged(R.id.sev__input)
+    @OnTextChanged(R2.id.sev__input)
     void onInputChanged(final CharSequence s, final int start, final int before, final int count) {
         if (input.getText().length() <= 0) {
             hideClear();

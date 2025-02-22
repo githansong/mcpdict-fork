@@ -7,9 +7,9 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -36,6 +36,8 @@ import org.hanqim.mcpdict.views.SearchResultCursorAdapter;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity
         extends AppCompatActivity
         implements
@@ -44,20 +46,20 @@ public class MainActivity
 
     private static final CharsetDetector detector = CharsetDetector.getInstance();
 
-    @BindView(R.id.search_input)
+    @BindView(R2.id.search_input)
     SearchEditView searchEdit;
-    @BindView(R.id.search_result)
+    @BindView(R2.id.search_result)
     ListView listView;
-    @BindView(R.id.spinner_search_as)
+    @BindView(R2.id.spinner_search_as)
     Spinner selectModeView;
-    @BindView(R.id.search_options)
+    @BindView(R2.id.search_options)
     LinearLayout optionsView;
 
-    @BindView(R.id.check_box_kuangx_yonh_only)
+    @BindView(R2.id.check_box_kuangx_yonh_only)
     CheckBox checkBoxKuangxYonhOnly;
-    @BindView(R.id.check_box_allow_variants)
+    @BindView(R2.id.check_box_allow_variants)
     CheckBox checkBoxAllowVariants;
-    @BindView(R.id.check_box_tone_insensitive)
+    @BindView(R2.id.check_box_tone_insensitive)
     CheckBox checkBoxToneInsensitive;
 
     private SearchResultCursorAdapter searchAdapter;
@@ -182,22 +184,13 @@ public class MainActivity
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        switch (id) {
-            case R.id.action_settings:
-                startActivity(
-                        new Intent()
-                                .setClass(MainActivity.this, SettingsActivity.class)
-                                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
-                break;
-            case R.id.action_toggle_options:
-                toggleOptions();
-                break;
-            case R.id.action_about:
-                break;
-            case R.id.action_help:
-                break;
-            default:
-                //Log.i("Invalid menu", "Menu Unknown");
+        if (id == R.id.action_settings){
+            startActivity(
+                    new Intent()
+                            .setClass(MainActivity.this, SettingsActivity.class)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+        } else if (id == R.id.action_toggle_options){
+            toggleOptions();
         }
         return super.onOptionsItemSelected(item);
 
